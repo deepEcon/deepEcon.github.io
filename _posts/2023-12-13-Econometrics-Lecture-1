@@ -1,1 +1,32 @@
-In this lecture we will learn basic assumptions of Linear regression model
+---
+layout: post
+title: "Understanding the Basic Assumptions of Linear Regression"
+date: 2023-05-09
+categories: Data Science
+---
+
+# Understanding the Basic Assumptions of Linear Regression
+
+In this lecture, we'll delve into the fundamental assumptions that underpin the linear regression model. Understanding these assumptions is crucial for applying the model correctly and interpreting its results accurately.
+
+## Assumption 1: Linearity
+
+The first assumption of linear regression is that there is a linear relationship between the dependent variable \( y \) and the independent variables \( x_1, x_2, \ldots, x_n \). Mathematically, this can be expressed as:
+
+\[ y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \cdots + \beta_nx_n + \epsilon \]
+
+where \( \beta_0, \beta_1, \ldots, \beta_n \) are the coefficients and \( \epsilon \) is the error term.
+
+## Assumption 2: Independence
+
+The independence of observations assumption implies that the observations are independent of each other. This is particularly important for the residuals \( \epsilon_i \), which should not be correlated:
+
+\[ \text{Cov}(\epsilon_i, \epsilon_j) = 0 \quad \text{for all} \quad i \neq j \]
+
+## Assumption 3: Homoscedasticity
+
+Homoscedasticity means that the residuals of the model have equal or almost equal variance across all levels of the independent variables. If the variance of residuals increases or decreases with the independent variable, it leads to heteroscedasticity, which can be visually depicted and tested using a plot of residuals versus fitted values.
+
+## Assumption 4: Normal Distribution of Errors
+
+For inference purposes, it is assumed that the residuals of the model are normally distributed. This assumption allows us to perform reliable hypothesis testing, represented as:
